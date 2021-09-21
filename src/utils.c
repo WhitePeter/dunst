@@ -141,7 +141,7 @@ char **string_to_array(const char *string, const char *delimiter)
 {
         char **arr = NULL;
         if (string) {
-                arr = g_strsplit(string, ",", 0);
+                arr = g_strsplit(string, delimiter, 0);
                 for (int i = 0; arr[i]; i++){
                         g_strstrip(arr[i]);
                 }
