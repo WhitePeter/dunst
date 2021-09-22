@@ -48,6 +48,9 @@ jobs:
     - name: build
       run: make -j all dunstify test/test
 
+    - name: doxygen
+      run: make -j doc-doxygen
+
     - name: test
       run: make -j test
 
